@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21BEC1523</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JSON Filter Application</h1>
+        <!-- JSON Input Form -->
+        <div class="form-group">
+            <label for="jsonInput">Enter JSON:</label>
+            <textarea id="jsonInput" rows="5" placeholder='Enter JSON like {"data":["1","2","A","B"]}'></textarea>
+            <button id="submitBtn">Submit</button>
+            <p id="error" class="error"></p>
+        </div>
+        <!-- Multi-Select Filter -->
+        <div class="form-group">
+            <label for="filter">Select Filter:</label>
+            <select id="filter" multiple>
+                <option value="alphabets">Alphabets</option>
+                <option value="numbers">Numbers</option>
+                <option value="lowercase">Highest Lowercase Alphabet</option>
+            </select>
+        </div>
+        <!-- Filtered Response -->
+        <div id="response">
+            <h2>Filtered Response:</h2>
+            <p id="filteredOutput"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

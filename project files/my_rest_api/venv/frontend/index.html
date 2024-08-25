@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Filter Application</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>JSON Filter Application</h1>
+    <form id="json-form">
+        <label for="json-input">Enter JSON:</label><br>
+        <textarea id="json-input" rows="10" cols="50">
+        </textarea><br>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <h2>Select Filter:</h2>
+    <select id="filter-select">
+        <option value="alphabets">Alphabets</option>
+        <option value="numbers">Numbers</option>
+        <option value="highest_lowercase">Highest Lowercase Alphabet</option>
+    </select>
+    <h2>Filtered Response:</h2>
+    <pre id="response-output"></pre>
+</body>
+</html>
